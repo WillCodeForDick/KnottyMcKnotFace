@@ -1,2 +1,2 @@
 discord.py
-youtube-dl
+youtube_dl
