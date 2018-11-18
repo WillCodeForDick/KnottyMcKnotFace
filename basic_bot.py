@@ -1,6 +1,6 @@
 from discord.ext import commands
 import discord
-import os
+from os import environ
 import random
 import Music
 
@@ -62,5 +62,7 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('------')
-print(os.environ["BOT_TOKEN"])
-bot.run(os.environ["BOT_TOKEN"])
+    
+token = environ.get("BOT_TOKEN")
+if not token: raise Exception('Fuck')
+bot.run(token)
