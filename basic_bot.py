@@ -62,5 +62,5 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('------')
-
+print(os.environ["BOT_TOKEN"])
 bot.run(os.environ["BOT_TOKEN"])
