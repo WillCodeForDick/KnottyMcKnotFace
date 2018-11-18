@@ -7,7 +7,6 @@ import Music
 #############################################
 #~~~~~~~~~~~~~~~~~~~SETUP~~~~~~~~~~~~~~~~~~~#
 #############################################
-token = 'NDk1Mjk3NTA3ODc5MDI2Njg4.DpAG-A.gKwq2WiKEi2TzuBdEYojemvEkRM'
 bot = commands.Bot(command_prefix=commands.when_mentioned_or('$'), description='A playlist example for discord.py')
 bot.add_cog(Music.Music(bot))
 
